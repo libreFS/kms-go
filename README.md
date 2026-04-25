@@ -1,6 +1,6 @@
-# MinIO KMS
+# kms-go — libreFS KMS/KES Go SDK
 
-This repository contains the Go SDKs for MinIO KMS and MinIO KES in two separate Go modules:
+Go SDKs for KMS and KES integration with [libreFS](https://github.com/libreFS/libreFS). Forked from `minio/kms-go`. Two separate Go modules:
  - [**`kms-go/kms`**](#kms-sdk) contains the KMS Go SDK
  - [**`kms-go/kes`**](#kes-sdk) contains the KES Go SDK
 
@@ -8,7 +8,7 @@ Each module uses its own semantic version and can be imported separately.
 
 ### KMS SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kms.svg)](https://pkg.go.dev/github.com/minio/kms-go/kms) ![GitHub Tag](https://img.shields.io/github/v/tag/minio/kms-go?filter=kms*)
+[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kms.svg)](https://pkg.go.dev/github.com/minio/kms-go/kms)
 
 Import the KMS SDK via:
 ```sh
@@ -24,7 +24,7 @@ require (
 
 ### KES SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kes.svg)](https://pkg.go.dev/github.com/minio/kms-go/kes) ![GitHub Tag](https://img.shields.io/github/v/tag/minio/kms-go?filter=kes*)
+[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kes.svg)](https://pkg.go.dev/github.com/minio/kms-go/kes)
 
 Import the KES SDK via:
 ```sh
