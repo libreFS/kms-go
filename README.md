@@ -8,33 +8,33 @@ Each module uses its own semantic version and can be imported separately.
 
 ### KMS SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kms.svg)](https://pkg.go.dev/github.com/minio/kms-go/kms)
+[![Go Reference](https://pkg.go.dev/badge/github.com/libreFS/kms-go/kms.svg)](https://pkg.go.dev/github.com/libreFS/kms-go/kms)
 
 Import the KMS SDK via:
 ```sh
-$ go get github.com/minio/kms-go/kms@latest
+$ go get github.com/libreFS/kms-go/kms@latest
 ```
 
 Or add it to your `go.mod` file:
 ```
 require (
-   github.com/minio/kms-go/kms@latest
+   github.com/libreFS/kms-go/kms@latest
 )
 ```
 
 ### KES SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/minio/kms-go/kes.svg)](https://pkg.go.dev/github.com/minio/kms-go/kes)
+[![Go Reference](https://pkg.go.dev/badge/github.com/libreFS/kms-go/kes.svg)](https://pkg.go.dev/github.com/libreFS/kms-go/kes)
 
 Import the KES SDK via:
 ```sh
-$ go get github.com/minio/kms-go/kes@latest
+$ go get github.com/libreFS/kms-go/kes@latest
 ```
 
 Or add it to your `go.mod` file:
 ```
 require (
-   github.com/minio/kms-go/kes@latest
+   github.com/libreFS/kms-go/kes@latest
 )
 ```
 

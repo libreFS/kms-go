@@ -1,34 +1,36 @@
-linters-settings:
-  golint:
-    min-confidence: 0
-
-  misspell:
-    locale: US
- 
-  staticcheck:
-    checks: ["all"]
+version: "2"
 
 linters:
-  disable-all: true
+  default: none
   enable:
-    - typecheck
+    - gofumpt
     - goimports
-    - misspell
-    - staticcheck
     - govet
-    - revive
     - ineffassign
-    - gosimple
-    - unused
+    - misspell
+    - revive
+    - staticcheck
     - prealloc
     - unconvert
-    - gofumpt
+    - unused
+  settings:
+    misspell:
+      locale: US
+    staticcheck:
+      checks:
+        - all
+        - -ST1000
+        - -ST1005
+        - -ST1016
+        - -ST1020
+        - -ST1021
+  exclusions:
+    rules:
+      - path: (.+)\.go$
+        text: "var-naming: don't use ALL_CAPS"
+      - path: (.+)\.go$
+        text: "package-comments:"
 
 issues:
-  exclude-use-default: false
-  exclude:
-      - "var-naming: don't use ALL_CAPS in Go names; use CamelCase"
-      - "package-comments: should have a package comment"
-
-service:
-  golangci-lint-version: 1.57.2 # use the fixed version to not introduce new linters unexpectedly
+  max-issues-per-linter: 100
+  max-same-issues: 100
